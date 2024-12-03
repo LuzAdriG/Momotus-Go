@@ -1,0 +1,73 @@
+body {
+  background-color: #F5F5DC;
+  color: #455A64;
+}
+.navbar {
+  background-color: #1E88E5;
+}
+.navbar .nav-link {
+  color: white !important;
+}
+.btn-primary {
+  background-color: #1E88E5;
+  border: none;
+}
+.btn-secondary {
+  background-color: #388E3C;
+  border: none;
+}
+.btn-warning {
+  background-color: #FFCA28;
+  color: black;
+}
+.hero {
+    position: relative;
+    background-image: url('Momotus.webp'); /* Aquí va tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 65vh; /* Ajusta la altura como prefieras */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2); /* Velo negro con 40% de opacidad */
+    z-index: 1;
+  }
+  .hero .container {
+    position: relative;
+    z-index: 2; /* Aseguramos que el contenido quede sobre el velo */
+  }
+  
+.btn {
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    padding: 1.25rem 2rem;
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border: 0;
+  }
+.features i {
+    margin-bottom: 15px;
+    color: #4CAF50; /* Color verde para los iconos */
+  }
+  
+.features h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+.features p {
+    font-size: 16px;
+    color: #555;
+  }
