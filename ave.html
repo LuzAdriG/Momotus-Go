@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Aves</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Iconos de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Estilo personalizado -->
+  <link rel="stylesheet" href="CustomStyle.css">
+</head>
+<body>
+  <!-- Formulario de registro de aves -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <h2 class="text-center text-primary">Registro de Aves</h2>
+        <form id="birdRegisterForm" enctype="multipart/form-data">
+          <div class="mb-3">
+            <label for="birdId" class="form-label">ID</label>
+            <input type="text" class="form-control" id="birdId" name="birdId" required>
+          </div>
+          <div class="mb-3">
+            <label for="birdImage" class="form-label">Imagen</label>
+            <input type="file" class="form-control" id="birdImage" name="birdImage" accept="image/*" required>
+          </div>
+          <div class="mb-3">
+            <label for="commonName" class="form-label">Nombre Común</label>
+            <input type="text" class="form-control" id="commonName" name="commonName" required>
+          </div>
+          <div class="mb-3">
+            <label for="scientificName" class="form-label">Nombre Científico</label>
+            <input type="text" class="form-control" id="scientificName" name="scientificName" required>
+          </div>
+          <div class="mb-3">
+            <label for="description" class="form-label">Descripción</label>
+            <textarea class="form-control" id="description" name="description" rows="4" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="habitat" class="form-label">Hábitat</label>
+            <input type="text" class="form-control" id="habitat" name="habitat" required>
+          </div>
+          <div class="mb-3">
+            <label for="behavior" class="form-label">Comportamiento</label>
+            <textarea class="form-control" id="behavior" name="behavior" rows="3" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="song" class="form-label">Canto (Archivo de Audio)</label>
+            <input type="file" class="form-control" id="song" name="song" accept="audio/*" required>
+          </div>
+          <div class="mb-3">
+            <label for="conservationStatus" class="form-label">Estado de Conservación</label>
+            <select class="form-select" id="conservationStatus" name="conservationStatus" required>
+              <option value="">Seleccione</option>
+              <option value="Extinto">Extinto</option>
+              <option value="En Peligro Crítico">En Peligro Crítico</option>
+              <option value="En Peligro">En Peligro</option>
+              <option value="Vulnerable">Vulnerable</option>
+              <option value="Casi Amenazado">Casi Amenazado</option>
+              <option value="Preocupación Menor">Preocupación Menor</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="region" class="form-label">Región</label>
+            <input type="text" class="form-control" id="region" name="region" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Registrar Ave</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
